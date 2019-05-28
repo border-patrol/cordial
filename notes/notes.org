@@ -1,0 +1,45 @@
+* Port Types as a non-ADT
+
+We don't make a distinction between arrays of signals and
+individual signals in the constructor itself. The values facilitate
+the differences.
+
+* Some data types are not DLists
+
+I would rather replace `InterfaceTys` with a DList. However, type
+checking later on becomes problematic. Idris, for some reason, cannot
+resolve the types.
+
+I would rather replace `ProjectedInterfaceTys` with a DList. However, type
+checking later on becomes problematic. Idris, for some reason, cannot
+resolve the types.
+
+* Lossy Projection
+
+Bounds on max consumer and producers is not required at the value
+level; they are metadata information.
+
+With Port notice how we constrain the value level values using type
+level values. This is core principle behind how we type check our
+ports/interfaces against an abstract definition.
+
+* Use of 'prf' in Direction and Necessary data structures
+
++ We use 'prfs' in the type to ensure that our ADT can look like an enumerated type, but still constration when constructors are valid.
+
++ We don't need to calculate the 'kind' in the data constructor as the types are sufficiently constrained.
++ These enumerated types and still have multiple constructors and still calculate the correct answer.
+
++ An alternative approach would be to bring the prf to the value level, but that makes our enumerated types have values.
+* Reset has no polarity
++ Before we modelled resets with a polarity; the wire sensitivity is sufficient for our needs.
+* Components
+
+We collect salient information about the interface in the type to
+help with specification of the component.
+
+Further, when adding an interface to the component, we use the
+expected interface type, specified in the type of Component, to use
+as the value passed to the projection function. This ensures that
+the projected type must be satisfied by the specified value, and
+not 'just' be a value presented by the interface itself.
