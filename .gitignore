@@ -1,0 +1,12 @@
+src/**/*.idh
+src/**/*.html
+src/**/*.tex
+*.idh
+sample.xml
+deps/
+*_doc/
+*.ibc
+*~
+.DS_Store
+*.xsd
+dependencies/

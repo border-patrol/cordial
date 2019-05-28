@@ -1,0 +1,20 @@
+package examples
+
+brief = "Examples using cordial."
+
+author = Jan de Muijnck-Hughes
+
+license = LICENSE
+
+pkgs = containers
+     , commons
+     , contrib
+     , xml
+     , edda
+
+sourcedir = src
+
+modules = Example.Specification.Mungo
+        , Example.Specification.LocalLink
+        , Example.Specification.APB
+        , Example.Specification.AXI4

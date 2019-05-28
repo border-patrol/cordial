@@ -1,0 +1,47 @@
+package cordial
+
+brief = "A core 'calculus' to reason about *System-on-Chip* (SoC) Architectures."
+
+readme = README.md
+
+author = Jan de Muijnck-Hughes
+
+license = LICENSE
+
+pkgs = containers
+     , commons
+     , contrib
+     , xml
+     , edda
+
+sourcedir = src
+
+modules = PrettyPrint.SExpr
+
+        , Language.EDSL.SingleStateVar
+
+        , Cordial.Model.Common.Essential
+        , Cordial.Model.Common.WireTy
+        , Cordial.Model.Common.Widths
+        , Cordial.Model.Common.Whole
+        , Cordial.Model.Common.VLNV
+        , Cordial.Model.Common.Necessary
+        , Cordial.Model.Common.Label
+        , Cordial.Model.Common.Name
+        , Cordial.Model.Common.Hacks
+        , Cordial.Model.Common.Direction
+        , Cordial.Model.Common
+
+        , Cordial.Model.Specification
+        , Cordial.Model.Projection
+
+        , Cordial.Model.Interface.Kinds
+        , Cordial.Model.Interface.Ports
+        , Cordial.Model.Interface.PortGroup
+        , Cordial.Model.Interface
+
+        , Cordial.Model.Component
+
+        , Cordial.EDSL.Specification.Lang
+        , Cordial.EDSL.Specification.API
+        , Cordial.EDSL.Specification
