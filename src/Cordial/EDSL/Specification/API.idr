@@ -2,7 +2,8 @@ module Cordial.EDSL.Specification.API
 
 import Data.Vect
 import Data.List.Quantifiers
-import Data.Ranged
+
+import Commons.Data.Ranged
 
 import Text.Markup.Edda
 

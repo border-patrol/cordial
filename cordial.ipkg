@@ -8,12 +8,6 @@ author = Jan de Muijnck-Hughes
 
 license = LICENSE
 
-pkgs = containers
-     , commons
-     , contrib
-     , xml
-     , edda
-
 sourcedir = src
 
 modules = PrettyPrint.SExpr

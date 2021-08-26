@@ -6,7 +6,7 @@
 ||| Core Data Types used in Cordial
 module Cordial.Model.Common
 
-import Data.Ranged
+import Commons.Data.Ranged
 import Data.Vect
 import Text.Markup.Edda
 

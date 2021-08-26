@@ -4,7 +4,7 @@ module Example.Specification.AXI4
 
 import Data.List
 import Data.Vect
-import Data.Ranged
+import Commons.Data.Ranged
 
 import Text.Markup.Edda
 import Text.Markup.Edda.Org

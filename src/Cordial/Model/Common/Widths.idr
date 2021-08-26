@@ -1,9 +1,11 @@
 module Cordial.Model.Common.Widths
 
 import public Data.List
-
-import Data.Ranged
 import Data.So
+
+import Commons.Data.Ranged
+
+
 import Cordial.Model.Common.Essential
 import Cordial.Model.Common.Whole
 import Cordial.Model.Common.Hacks

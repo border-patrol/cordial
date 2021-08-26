@@ -1,6 +1,6 @@
 module Cordial.Model.Common.WireTy
 
-import Data.Ranged
+import Commons.Data.Ranged
 
 import Cordial.Model.Common.Essential
 

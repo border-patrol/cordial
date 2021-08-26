@@ -14,7 +14,6 @@ import Text.Markup.Edda
 import public Cordial.Model.Common
 import        Cordial.Model.Specification
 
-%hide DList.map
 
 %default total
 %access public export

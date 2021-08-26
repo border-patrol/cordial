@@ -2,7 +2,7 @@ module Cordial.Model.Interface.PortViews
 
 import Data.Vect
 import Data.DList
-import Data.Ranged
+import Commons.Data.Ranged
 
 import Text.Markup.Edda
 

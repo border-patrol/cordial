@@ -8,7 +8,8 @@ module Cordial.EDSL.Specification
 
 import public Data.Vect
 import public Data.List.Quantifiers
-import public Data.Ranged
+
+import public Commons.Data.Ranged
 
 import public Text.Markup.Edda
 

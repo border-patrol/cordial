@@ -8,7 +8,7 @@ module Cordial.Model.Interface
 
 import Data.Vect
 import Data.DList
-import Data.Ranged
+import Commons.Data.Ranged
 
 import Text.Markup.Edda
 

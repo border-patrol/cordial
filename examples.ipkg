@@ -6,11 +6,7 @@ author = Jan de Muijnck-Hughes
 
 license = LICENSE
 
-pkgs = containers
-     , commons
-     , contrib
-     , xml
-     , edda
+pkgs = effects
 
 sourcedir = src
 
